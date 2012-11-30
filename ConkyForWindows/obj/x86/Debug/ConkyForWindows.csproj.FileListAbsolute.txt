@@ -1,0 +1,2 @@
+C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Debug\WpfApplication1.exe
+C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Debug\WpfApplication1.pdb
