@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="446" Width="384" >
     <Grid>
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="avgBox" VerticalAlignment="Top" Width="120" />
-        <Button Content="Start" Height="23" HorizontalAlignment="Left" Margin="141,78,0,0" Name="Async" VerticalAlignment="Top" Width="75" Click="Async_Click" />
-        <ProgressBar Height="21" HorizontalAlignment="Left" Margin="12,41,0,0" Name="cpuUsage" VerticalAlignment="Top" Width="120" />
-        <TextBox Height="23" HorizontalAlignment="Right" Margin="0,12,23,0" Name="resultLabel" VerticalAlignment="Top" Width="120" />
-        <Button Content="Stop" Height="23" HorizontalAlignment="Left" Margin="141,107,0,0" Name="cancel" VerticalAlignment="Top" Width="75" Click="cancel_Click" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,41,0,0" Name="avgBox" VerticalAlignment="Top" Width="120" />
+        <Button Content="Start" Height="23" Margin="0,10,10,0" Name="Async" VerticalAlignment="Top" Click="Async_Click" HorizontalAlignment="Right" Width="75" />
+        <ProgressBar Height="21" HorizontalAlignment="Left" Margin="12,70,0,0" Name="cpuUsage" VerticalAlignment="Top" Width="120" />
+        <Button Content="Stop" Height="23" Margin="0,38,10,0" Name="cancel" VerticalAlignment="Top" Click="cancel_Click" HorizontalAlignment="Right" Width="75" />
+        <Label Content="CPU" Height="28" HorizontalAlignment="Left" Margin="12,8,0,0" Name="label1" VerticalAlignment="Top" />
     </Grid>
 </Window>

@@ -14,11 +14,12 @@ using System.Windows.Shapes;
 using System.Diagnostics;
 using System.Threading;
 using System.ComponentModel;
+using System.Net;
 
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainWindow.xamlasdf
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -70,6 +71,13 @@ namespace WpfApplication1
             float[] avg = new float[10];
             while (true)//for (int i = 1; (i <= 10); i++)
             {
+                //HTTPGet req = new HTTPGet();
+                //req.Request("http://checkip.dyndns.org");
+                //string[] a = req.ResponseBody.Split(':');
+                //string a2 = a[1].Substring(1);
+                //string[] a3 = a2.Split('<');
+                //string a4 = a3[0];
+                //Console.WriteLine(a4);
                 if ((worker.CancellationPending == true))
                 {
                     e.Cancel = true;
@@ -83,17 +91,16 @@ namespace WpfApplication1
                         avg[ii] = cpuCounter.NextValue();
                         asdfa = avg.Average();
                         string aasdf = asdfa.ToString();
-
                         Thread.Sleep(100);
-
                     }
+
 
                 }
             }
         }
         private void bw_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
-            this.resultLabel.Text = (e.ProgressPercentage.ToString() + "%");
+            //this.resultLabel.Text = (e.ProgressPercentage.ToString() + "%");
             avgBox.Text = asdfa.ToString();
             cpuUsage.Value = asdfa;
 
@@ -102,17 +109,17 @@ namespace WpfApplication1
         {
             if ((e.Cancelled == true))
             {
-                this.resultLabel.Text = "Canceled!";
+                //this.resultLabel.Text = "Canceled!";
             }
 
             else if (!(e.Error == null))
             {
-                this.resultLabel.Text = ("Error: " + e.Error.Message);
+                //this.resultLabel.Text = ("Error: " + e.Error.Message);
             }
 
             else
             {
-                this.resultLabel.Text = "Done!";
+                //this.resultLabel.Text = "Done!";
                 //avgBox.Text = asdfa.ToString();
             }
         }

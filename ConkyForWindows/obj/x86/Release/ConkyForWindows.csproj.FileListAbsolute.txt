@@ -11,3 +11,4 @@ C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\W
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.exe
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.pdb
+C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csprojResolveAssemblyReference.cache
