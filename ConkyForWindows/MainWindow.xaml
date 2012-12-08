@@ -1,12 +1,61 @@
-﻿<Window x:Class="WpfApplication1.MainWindow"
+﻿<Window x:Name="locationWindow" x:Class="WpfApplication1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="446" Width="384" >
-    <Grid>
-        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,41,0,0" Name="avgBox" VerticalAlignment="Top" Width="120" />
-        <Button Content="Start" Height="23" Margin="0,10,10,0" Name="Async" VerticalAlignment="Top" Click="Async_Click" HorizontalAlignment="Right" Width="75" />
-        <ProgressBar Height="21" HorizontalAlignment="Left" Margin="12,70,0,0" Name="cpuUsage" VerticalAlignment="Top" Width="120" />
-        <Button Content="Stop" Height="23" Margin="0,38,10,0" Name="cancel" VerticalAlignment="Top" Click="cancel_Click" HorizontalAlignment="Right" Width="75" />
-        <Label Content="CPU" Height="28" HorizontalAlignment="Left" Margin="12,8,0,0" Name="label1" VerticalAlignment="Top" />
+        Title="Winky" Height="570" Width="277.0" Loaded="Window_Loaded_1" ResizeMode="NoResize" MouseDoubleClick="locationWindow_MouseDoubleClick" ShowInTaskbar="False" BorderBrush="Red"  >
+
+    <Grid x:Name="grid" Margin="0,0,0,-3">
+
+        <Image x:Name="imgCloudy" Margin="141,437,0,0" Height="94" VerticalAlignment="Top" HorizontalAlignment="Left" Width="87">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="70"
+                             
+     UriSource="" />
+            </Image.Source>
+        </Image>
+        <ProgressBar Height="21" HorizontalAlignment="Left" Margin="126,96,0,0" Name="cpuUsage" VerticalAlignment="Top" Width="120" Foreground="#FF35B5E5" />
+        <Button Content="X" Height="12" HorizontalAlignment="Left" Margin="263,0,-6,0" Name="cancel" VerticalAlignment="Top" Width="14" Click="cancel_Click" FontSize="6" Background="#FF35B5E5" />
+        <TextBox x:Name="txtNetOut" Height="23" Margin="126,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Background="#FFD1D1D1"/>
+        <TextBox x:Name="txtNetIn" HorizontalAlignment="Left" Height="23" Margin="126,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1D1D1"/>
+        <TextBox x:Name="txtExternal" Height="23" Margin="126,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Background="#FFD1D1D1"/>
+        <TextBox x:Name="txtLocal" Height="23" Margin="126,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Background="#FFD1D1D1"/>
+        <Label x:Name="lblCPU" Content="CPU Load :" HorizontalAlignment="Left" Margin="54,70,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNetIn" Content="Data Receiving :" HorizontalAlignment="Left" Margin="26,179,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNetOut" Content="Data Sending :" HorizontalAlignment="Left" Margin="34,207,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblExternalIP" Content="External IP :" HorizontalAlignment="Left" Margin="50,318,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblLocalIP" Content="Local IP :" HorizontalAlignment="Left" Margin="65,346,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRam" HorizontalAlignment="Left" Height="23" Margin="126,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1D1D1"/>
+        <Label x:Name="lblRam" Content="Free RAM :" HorizontalAlignment="Left" Margin="54,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.737,0.269"/>
+        <TextBox x:Name="txtRamPercent" HorizontalAlignment="Left" Height="23" Margin="126,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1D1D1">
+            <TextBox.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.OpacityMask>
+        </TextBox>
+        <Label x:Name="lblRamPercent" Content="Used RAM :" HorizontalAlignment="Left" Margin="49,149,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDriveSpace" HorizontalAlignment="Left" Height="23" Margin="126,377,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1D1D1"/>
+        <Label x:Name="lblDiskSpace" Content="Free Space :" HorizontalAlignment="Left" Margin="48,376,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTotalReceived" Content="Total Data Received :" HorizontalAlignment="Left" Margin="-1,235,0,0" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="txtTotalReceived" HorizontalAlignment="Left" Height="23" Margin="126,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1D1D1"/>
+        <Label x:Name="lblTotalSent" Content="Total Data Sent :" HorizontalAlignment="Left" Margin="24,263,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.026,-0.462"/>
+        <TextBox x:Name="txtTotalSent" HorizontalAlignment="Left" Height="23" Margin="126,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1D1D1"/>
+        <TextBox x:Name="txtPing" HorizontalAlignment="Left" Height="23" Margin="126,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1D1D1"/>
+        <Label x:Name="lblPing" Content="Ping :" HorizontalAlignment="Left" Margin="82,292,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtAvgBox" HorizontalAlignment="Left" Margin="126,75,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.663"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Label x:Name="lblUpdates" Content="Available Updates :" HorizontalAlignment="Left" Margin="10,402,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtWeather" HorizontalAlignment="Left" Height="83" Margin="10,446,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="251" Background="{x:Null}" BorderThickness="0"/>
+        <TextBox x:Name="txtUpdates" HorizontalAlignment="Left" Height="24" Margin="126,405,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFD1D1D1"/>
+        <TextBlock x:Name="txtTime" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Text="Time" Margin="3,5,0,0"/>
+        <Label x:Name="lblSysInfo" Content="  System Information" Margin="0,21,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Height="30" FontSize="16" FontWeight="Bold" Background="#FF35B5E5"/>
     </Grid>
 </Window>
