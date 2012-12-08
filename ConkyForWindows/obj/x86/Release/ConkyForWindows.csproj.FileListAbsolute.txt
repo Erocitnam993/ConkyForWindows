@@ -11,4 +11,91 @@ C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\W
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.exe
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.pdb
-C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csprojResolveAssemblyReference.cache
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.exe
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.pdb
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\MainWindow.baml
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\MainWindow.g.cs
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\App.g.cs
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1_MarkupCompile.cache
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.g.resources
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.Properties.Resources.resources
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\WpfApplication1.exe
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\WpfApplication1.pdb
+C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csprojResolveAssemblyReference.cache
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1.exe
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1.pdb
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\WpfApplication1.exe
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\WpfApplication1.pdb
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\ConkyForWindows.csprojResolveAssemblyReference.cache
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\MainWindow.baml
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\MainWindow.g.cs
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\App.g.cs
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1_MarkupCompile.cache
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1.g.resources
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1.Properties.Resources.resources
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.exe
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.pdb
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\WpfApplication1.exe
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\WpfApplication1.pdb
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csprojResolveAssemblyReference.cache
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\MainWindow.baml
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\MainWindow.g.cs
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\App.g.cs
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\WpfApplication1_MarkupCompile.cache
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.g.resources
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.Properties.Resources.resources
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\ZedGraph.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\ZedGraph.xml
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\de\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\es\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\fr\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\hu\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\it\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\ja\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\pt\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\ru\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\sk\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\sv\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\tr\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\zh-cn\ZedGraph.resources.dll
+C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\zh-tw\ZedGraph.resources.dll
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\ConkyForWindows.exe.manifest
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\ConkyForWindows.application
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\ConkyForWindows.exe
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\ConkyForWindows.pdb
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\bin\Release\Interop.WUApiLib.dll
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\Interop.WUApiLib.dll
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.ResolveComReference.cache
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\MainWindow.baml
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\MainWindow.g.cs
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\App.g.cs
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows_MarkupCompile.cache
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.g.resources
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.Properties.Resources.resources
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.exe.manifest
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.application
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.exe
+C:\Users\Tanner\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.pdb
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Interop.WUApiLib.dll
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.ResolveComReference.cache
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\bin\Release\Interop.WUApiLib.dll
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csprojResolveAssemblyReference.cache
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\MainWindow.baml
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\MainWindow.g.cs
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\App.g.cs
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\bin\Release\Winky.exe.manifest
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\bin\Release\Winky.application
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\bin\Release\Winky.exe
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\bin\Release\Winky.pdb
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky_MarkupCompile.cache
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.g.resources
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.Properties.Resources.resources
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.exe.manifest
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.application
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.exe
+C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.pdb
