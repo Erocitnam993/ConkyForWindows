@@ -348,7 +348,7 @@ namespace WpfApplication1
         }
 
      
-        private void fifteenMinutes(object sender, ElapsedEventArgs e)
+        public void fifteenMinutes(object sender, ElapsedEventArgs e)
         {
             cTimer.Interval = 900000;
             //updateCount = 0;
@@ -454,7 +454,33 @@ namespace WpfApplication1
                 this.Top += 26;
                 this.Height -= 20;
             }
-        }        
+        }
+        private Winky.Window1 newWindow = new Winky.Window1();
+        private System.Timers.Timer uTimer = new System.Timers.Timer();
+        private void settings_Click(object sender, RoutedEventArgs e)
+        {
+            newWindow.Show();
+            
+            uTimer.Elapsed += new ElapsedEventHandler(updateSettings);
+
+            uTimer.Interval = 500;
+            uTimer.Enabled = true;
+            
+        }
+
+        private void updateSettings(object sender, ElapsedEventArgs e)
+        {
+            
+            
+            string location;
+            if (!newWindow.IsVisible)
+            {
+                location = newWindow.location;
+                cTimer.Stop();
+                cTimer.Start();
+                uTimer.Stop();
+            }
+        }
     }
  }
 

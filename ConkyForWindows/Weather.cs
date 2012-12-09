@@ -31,20 +31,22 @@ namespace WeatherRSS
 {
     class Weather
     {
-        //public bool cloudy;
+        private Winky.Window1 userLocation = new Winky.Window1();
+        private string location = "";
         public string CurrentConditions()
         {
             
             string weather = "";
+            location = userLocation.location;
 
             // http://weather.yahooapis.com/forecastrss?w=2464601
-
+            
             // conditions
             // Create a new XmlDocument  
             XmlDocument condition = new XmlDocument();
 
             // Load data  
-            condition.Load("http://weather.yahooapis.com/forecastrss?w=2464601");
+            condition.Load(location);
 
             // Set up namespace manager for XPath  
             XmlNamespaceManager NameSpaceMgrCondition = new XmlNamespaceManager(condition.NameTable);
@@ -83,7 +85,7 @@ namespace WeatherRSS
             XmlDocument docc = new XmlDocument();
 
             // Load data  
-            docc.Load("http://xml.weather.yahoo.com/forecastrss?w=2464601");
+            docc.Load(location);
 
             // Set up namespace manager for XPath  
             XmlNamespaceManager forcastNameSpaceMgr = new XmlNamespaceManager(docc.NameTable);
@@ -110,7 +112,7 @@ namespace WeatherRSS
             XmlDocument docc = new XmlDocument();
 
             // Load data  
-            docc.Load("http://xml.weather.yahoo.com/forecastrss?w=2464601");
+            docc.Load(location);
 
             // Set up namespace manager for XPath  
             XmlNamespaceManager forcastNameSpaceMgr = new XmlNamespaceManager(docc.NameTable);
@@ -145,7 +147,7 @@ namespace WeatherRSS
             XmlDocument doc = new XmlDocument();
 
             // Load data  
-            doc.Load("http://xml.weather.yahoo.com/forecastrss?w=2464601");
+            doc.Load(location);
 
             // Set up namespace manager for XPath  
             XmlNamespaceManager ImageNameSpaceMgr = new XmlNamespaceManager(doc.NameTable);
