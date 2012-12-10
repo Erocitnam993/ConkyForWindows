@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Winky.Properties;
 
 namespace Winky
 {
@@ -23,17 +24,22 @@ namespace Winky
         public Window1()
         {
             InitializeComponent();
-            locations.location = "http://weather.yahooapis.com/forecastrss?w=2464601";
+           // locations.location = "http://weather.yahooapis.com/forecastrss?w=2464601";
         }
 
         // just in case the textbox is null we have a default location.
-        private WeatherRSS.Weather locations = new WeatherRSS.Weather();
+      //  private WeatherRSS.Weather locations = new WeatherRSS.Weather();
         
         //public string location = "http://weather.yahooapis.com/forecastrss?w=2464601";
-        private string WOEID = "";
+        private WpfApplication1.MainWindow fif = new WpfApplication1.MainWindow();
         private void Settings_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            locations.location = "weather.yahooapis.com/forecastrss?w=" + txtWeatherLocation.Text;
+            if (txtWeatherLocation.Text != "")
+            {
+                Settings.Default.textboxLocation = "http://weather.yahooapis.com/forecastrss?w=" + txtWeatherLocation.Text;
+            }
+            Settings.Default.nic = comboNic.SelectedIndex;
+            Settings.Default.Save();
         }
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
         {

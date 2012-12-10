@@ -21,6 +21,7 @@ using System.Timers;
 using WUApiLib;
 using System.Management;
 using Microsoft.Win32;
+using Winky.Properties;
 
 
 namespace WpfApplication1
@@ -85,7 +86,7 @@ namespace WpfApplication1
         public bool test;
         public string time;
         public string cpuCount;
-
+        public int nic = 0;
         public NetworkInterface[] interfaces = NetworkInterface.GetAllNetworkInterfaces();
         public PerformanceCounter cpuCounter = new PerformanceCounter();
          
@@ -135,7 +136,7 @@ namespace WpfApplication1
                  
                     if (netavailable2 == true)
                     {
-                        NetworkInterface ni = interfaces[2];
+                        NetworkInterface ni = interfaces[nic];
 
                         totalSent = (ni.GetIPv4Statistics().BytesSent / 1048576.0).ToString("f2") + " MB";
                         totalReceived = (ni.GetIPv4Statistics().BytesReceived / 1048576.0).ToString("f2") + " MB";
@@ -190,24 +191,13 @@ namespace WpfApplication1
                     cpuCount = (string)Rkey.GetValue("ProcessorNameString") + "\n" + new Microsoft.VisualBasic.Devices.ComputerInfo().OSFullName;
                      *
                      */
- 
 
+                    weather = new WeatherRSS.Weather();
                     if ( netavailable2 == true && number == 3)
                     {
                         RSS = weather.CurrentConditions();
                         WeatherImage = new Uri(weather.getImage());
-                    }/*
-                    else if (netavailable2 == true && number == 4)
-                    {
-                        UpdateSessionClass uSession = new UpdateSessionClass();
-                        IUpdateSearcher uSearcher = uSession.CreateUpdateSearcher();
-                        ISearchResult uResult = uSearcher.Search("IsInstalled=0");
-
-                        foreach (IUpdate update in uResult.Updates)
-                        {
-                            updateCount++;
-                        }
-                    }*/
+                    }
                     else if (netavailable2 == false)
                     {
                         updates = "Disconnected";
@@ -218,9 +208,16 @@ namespace WpfApplication1
         }
 
         //Update GUI here with info from the background thread
-       
+        private string oldLocation = Settings.Default.textboxLocation;
+        private string newLocation;
         private void bw_ProgressChanged(object sender, ProgressChangedEventArgs e)
         {
+            newLocation = Settings.Default.textboxLocation;
+            if (oldLocation != newLocation)
+            {
+                cTimer.Interval = 1;
+                oldLocation = newLocation;
+            }
             
             //this.resultLabel.Text = (e.ProgressPercentage.ToString());
             txtAvgBox.Text = asdfa.ToString("f2") + "%";
@@ -239,6 +236,7 @@ namespace WpfApplication1
             txtPing.Text = pingtime;
             txtLocal.Text = ipLocal;
             txtExternal.Text = ipExternal;
+            nic = Settings.Default.nic;
 
             //Converts Variables to a String so you can then format properly
             Convert.ToString(ramTotal);
@@ -271,7 +269,8 @@ namespace WpfApplication1
 
         public int updateCount = 0;
         public string external;
-        private WeatherRSS.Weather weather = new WeatherRSS.Weather();
+
+        private WeatherRSS.Weather weather;// = new WeatherRSS.Weather();
         Uri WeatherImage = new Uri("http://s3.amazonaws.com/gt-production-icons/icons/icon/62225.jpg?1348580377");
     
         private string RSS;
@@ -300,8 +299,18 @@ namespace WpfApplication1
         public System.Timers.Timer cTimer = new System.Timers.Timer();
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
+
+            if (Settings.Default.textboxLocation == "" || Settings.Default.textboxLocation == "http://weather.yahooapis.com/forecastrss?w=")
+            {
+                Settings.Default.textboxLocation = "http://weather.yahooapis.com/forecastrss?w=2459115";
+                newWindow = new Winky.Window1();
+                newWindow.Show();
+                
+            }
+           
+            
             cancel.Opacity = 0;
-          
+            
             bw.RunWorkerAsync();
 
             RSS = "Collecting Candy...";
@@ -347,7 +356,7 @@ namespace WpfApplication1
             cTimer.Enabled = true;
         }
 
-     
+        
         public void fifteenMinutes(object sender, ElapsedEventArgs e)
         {
             cTimer.Interval = 900000;
@@ -357,6 +366,7 @@ namespace WpfApplication1
             ISearchResult uResult = uSearcher.Search("IsInstalled=0 and Type='Software'");
             updateCount = uResult.Updates.Count;
 
+            
             if (netavailable == true)
             {
                 RSS = weather.CurrentConditions();
@@ -398,7 +408,7 @@ namespace WpfApplication1
         private void OnTimedEvent(object sender, ElapsedEventArgs e)
         {
             //Grabs all the needed info for network usage
-            NetworkInterface ni = interfaces[2];
+            NetworkInterface ni = interfaces[nic];
             
             upLoadNew = (ni.GetIPv4Statistics().BytesSent / 131072.0);
             upLoadTotal = upLoadNew - upLoadOld;
@@ -466,24 +476,9 @@ namespace WpfApplication1
         {
             newWindow = new Winky.Window1();
             newWindow.Show();
+
             
-            uTimer.Elapsed += new ElapsedEventHandler(updateSettings);
-            uTimer.Interval = 500;
-            uTimer.Enabled = true;
-            
-        }
-        // UpdateSettings method to run until the window closes.
-        private void updateSettings(object sender, ElapsedEventArgs e)
-        {
-            string location;
-            if (!newWindow.IsVisible)
-            {
-                //location = newWindow.location;
-                RSS = weather.CurrentConditions();
-                WeatherImage = new Uri(weather.getImage());
-                uTimer.Stop(); // stops this timer.
-            }
-        }
+        }        
     }
  }
 

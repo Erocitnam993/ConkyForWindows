@@ -50,19 +50,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ibWGzOcxpHljxp/hvmKvI9Yw1og=</dsig:DigestValue>
+        <dsig:DigestValue>VGOH6e/PjZfcjsMVG9PsTRHJj00=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Winky.exe" size="36352">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Winky.exe" size="36864">
       <assemblyIdentity name="Winky" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>5dovMNkjPQ3Z+4bFIvFut6hz94I=</dsig:DigestValue>
+        <dsig:DigestValue>WwUMRm7ZGM8QMHaP+Q7ZC2bGNbk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,6 +73,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>7+nOazz3gzjs8SKE2fvi7hkKXow=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Winky.exe.config" size="895">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>cq21XLlw5KUemO1dQTxFkUUYUss=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

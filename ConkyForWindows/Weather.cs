@@ -26,18 +26,17 @@ using Microsoft.Win32;
 using System.Xml.XPath;
 using System.Xml.Linq;
 using System.Text.RegularExpressions;
-
+using Winky.Properties;
 namespace WeatherRSS
 {
     class Weather
     {
-        private Winky.Window1 userLocation;
-        public string location = "";
+
+        public string location = Settings.Default.textboxLocation;
         public string CurrentConditions()
         {
-            userLocation = new Winky.Window1();
+            
             string weather = "";
-            //location = userLocation.location;
 
             // http://weather.yahooapis.com/forecastrss?w=2464601
             
