@@ -58,5 +58,17 @@ namespace Winky.Properties {
                 this["nic"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string txtWOEID {
+            get {
+                return ((string)(this["txtWOEID"]));
+            }
+            set {
+                this["txtWOEID"] = value;
+            }
+        }
     }
 }

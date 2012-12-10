@@ -119,8 +119,8 @@ namespace WpfApplication1
                         avg[ii] = cpuCounter.NextValue();
                         asdfa = avg.Average();
                         string aasdf = asdfa.ToString();
-
-                        Thread.Sleep(100);
+                       
+                            Thread.Sleep(100);  
                     }
                     
                     //Grabs Needed Info For Disk Space etc...
@@ -475,9 +475,12 @@ namespace WpfApplication1
         private void settings_Click(object sender, RoutedEventArgs e)
         {
             newWindow = new Winky.Window1();
-            newWindow.Show();
+            newWindow.Show();        
+        }
 
-            
+        private void locationWindow_Closing(object sender, CancelEventArgs e)
+        {  
+            Environment.Exit(0);
         }        
     }
  }

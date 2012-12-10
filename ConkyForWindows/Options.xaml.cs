@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -26,18 +27,17 @@ namespace Winky
             InitializeComponent();
            // locations.location = "http://weather.yahooapis.com/forecastrss?w=2464601";
         }
-
-        // just in case the textbox is null we have a default location.
-      //  private WeatherRSS.Weather locations = new WeatherRSS.Weather();
-        
+       
         //public string location = "http://weather.yahooapis.com/forecastrss?w=2464601";
         private WpfApplication1.MainWindow fif = new WpfApplication1.MainWindow();
         private void Settings_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+
             if (txtWeatherLocation.Text != "")
             {
                 Settings.Default.textboxLocation = "http://weather.yahooapis.com/forecastrss?w=" + txtWeatherLocation.Text;
             }
+            Settings.Default.txtWOEID = txtWeatherLocation.Text;
             Settings.Default.nic = comboNic.SelectedIndex;
             Settings.Default.Save();
         }
@@ -45,6 +45,19 @@ namespace Winky
         {
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
             e.Handled = true;
+        }
+
+        private void options_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Sets the WOEID texbox to last saved entry
+            txtWeatherLocation.Text = Settings.Default.txtWOEID;
+            //Scans for all NIC'sand adds them to the ComboBox
+            NetworkInterface[] interfaces
+               = NetworkInterface.GetAllNetworkInterfaces();
+            foreach (NetworkInterface ni in interfaces)
+            {
+                comboNic.Items.Add(ni.NetworkInterfaceType);
+            }
         }
     }
 }
