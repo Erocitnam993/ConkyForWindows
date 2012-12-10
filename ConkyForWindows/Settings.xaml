@@ -3,8 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Window1" Height="300" Width="300" Closing="Settings_Closing">
     <Grid>
-        <Label x:Name="lblInformation" Content="Paste the URL for Yahoo's weather RSS feed" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="27" Width="272"/>
-        <TextBox x:Name="txtWeatherLocation" HorizontalAlignment="Left" Height="40" Margin="10,42,0,0" TextWrapping="Wrap" Text="http://weather.yahooapis.com/forecastrss?w=2464601" VerticalAlignment="Top" Width="272"/>
+        <Label x:Name="lblInformation" Content="Paste your WOEID into the box below." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="27" Width="272"/>
+        <TextBox x:Name="txtWeatherLocation" HorizontalAlignment="Left" Height="23" Margin="10,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
+        <Label x:Name="WOEIDInfo" Content="For WOEID information &#xA;" HorizontalAlignment="Left" Margin="71,42,0,0" VerticalAlignment="Top" Width="134" Height="34"/>
+        <TextBlock Margin="205,47,23,193">
+            <Hyperlink NavigateUri="http://woeid.rosselliot.co.nz/lookup/" RequestNavigate="Hyperlink_RequestNavigate">
+            Click here
+            </Hyperlink>
+        </TextBlock>
+        
 
     </Grid>
 </Window>

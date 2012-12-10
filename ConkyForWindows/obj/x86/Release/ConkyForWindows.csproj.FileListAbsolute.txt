@@ -88,11 +88,10 @@ C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Wink
 C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.application
 C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.exe
 C:\Users\Greg\Documents\GitHub\ConkyWindows\ConkyForWindows\obj\x86\Release\Winky.pdb
+C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Winky.exe
+C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Interop.WUApiLib.dll
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Winky.exe.manifest
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Winky.application
-C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Winky.exe
-C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Winky.pdb
-C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Interop.WUApiLib.dll
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\Interop.WUApiLib.dll
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.ResolveComReference.cache
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\MainWindow.baml
@@ -108,3 +107,4 @@ C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\W
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\Winky.application
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\Winky.exe
 C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\Winky.pdb
+C:\Users\Greg\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Winky.pdb

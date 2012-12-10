@@ -31,13 +31,13 @@ namespace WeatherRSS
 {
     class Weather
     {
-        private Winky.Window1 userLocation = new Winky.Window1();
-        private string location = "";
+        private Winky.Window1 userLocation;
+        public string location = "";
         public string CurrentConditions()
         {
-            
+            userLocation = new Winky.Window1();
             string weather = "";
-            location = userLocation.location;
+            //location = userLocation.location;
 
             // http://weather.yahooapis.com/forecastrss?w=2464601
             

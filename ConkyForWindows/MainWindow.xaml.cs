@@ -256,7 +256,7 @@ namespace WpfApplication1
             txtDriveSpace.Text = driveSpace.ToString("f2") + " GB";
 
             //Shows the cooridinates of screen window
-            Point scrPos = this.PointToScreen(new Point(0, 0));
+            //Point scrPos = this.PointToScreen(new Point(0, 0));
             //txtPoint.Text = Convert.ToString(scrPos);
 
             //Prints Available Updates to screen.
@@ -433,7 +433,7 @@ namespace WpfApplication1
             
 
         }
-
+        // On double click resize the window. This keeps the content from shifting around.
         private void locationWindow_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             if (locationWindow.WindowStyle == System.Windows.WindowStyle.None)
@@ -455,30 +455,33 @@ namespace WpfApplication1
                 this.Height -= 20;
             }
         }
-        private Winky.Window1 newWindow = new Winky.Window1();
+
+        // Settings update.
+        // Create new window construct.
+        public string location = "";
+        private Winky.Window1 newWindow;
+        // I created a timer to check to see if the settings window has closed.
         private System.Timers.Timer uTimer = new System.Timers.Timer();
         private void settings_Click(object sender, RoutedEventArgs e)
         {
+            newWindow = new Winky.Window1();
             newWindow.Show();
             
             uTimer.Elapsed += new ElapsedEventHandler(updateSettings);
-
             uTimer.Interval = 500;
             uTimer.Enabled = true;
             
         }
-
+        // UpdateSettings method to run until the window closes.
         private void updateSettings(object sender, ElapsedEventArgs e)
         {
-            
-            
             string location;
             if (!newWindow.IsVisible)
             {
-                location = newWindow.location;
-                cTimer.Stop();
-                cTimer.Start();
-                uTimer.Stop();
+                //location = newWindow.location;
+                RSS = weather.CurrentConditions();
+                WeatherImage = new Uri(weather.getImage());
+                uTimer.Stop(); // stops this timer.
             }
         }
     }
