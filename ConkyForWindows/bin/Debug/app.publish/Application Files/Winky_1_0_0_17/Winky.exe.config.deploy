@@ -16,6 +16,12 @@
             <setting name="nic" serializeAs="String">
                 <value>0</value>
             </setting>
+            <setting name="txtWOEID" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="driveSelection" serializeAs="String">
+                <value>0</value>
+            </setting>
         </Winky.Properties.Settings>
     </userSettings>
 </configuration>

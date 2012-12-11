@@ -31,18 +31,7 @@ namespace Winky
        
         //public string location = "http://weather.yahooapis.com/forecastrss?w=2464601";
         private WpfApplication1.MainWindow fif = new WpfApplication1.MainWindow();
-        private void Settings_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
 
-            if (txtWeatherLocation.Text != "")
-            {
-                Settings.Default.textboxLocation = "http://weather.yahooapis.com/forecastrss?w=" + txtWeatherLocation.Text;
-            }
-            Settings.Default.txtWOEID = txtWeatherLocation.Text;
-            Settings.Default.nic = comboNic.SelectedIndex;
-            Settings.Default.driveSelection = comboDisk.SelectedIndex;
-            Settings.Default.Save();
-        }
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
         {
             Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));

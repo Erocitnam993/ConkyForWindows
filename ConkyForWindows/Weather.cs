@@ -33,9 +33,10 @@ namespace WeatherRSS
     {
 
         public string location = Settings.Default.textboxLocation;
+        
         public string CurrentConditions()
         {
-            
+            string city = "";
             string weather = "";
 
             // http://weather.yahooapis.com/forecastrss?w=2464601
@@ -46,13 +47,27 @@ namespace WeatherRSS
 
             // Load data  
             condition.Load(location);
+            
 
             // Set up namespace manager for XPath  
             XmlNamespaceManager NameSpaceMgrCondition = new XmlNamespaceManager(condition.NameTable);
+            XmlNamespaceManager NameSpaceMgrCity = new XmlNamespaceManager(condition.NameTable);
             NameSpaceMgrCondition.AddNamespace("yweather", "http://xml.weather.yahoo.com/ns/rss/1.0");
+            NameSpaceMgrCity.AddNamespace("yweather", "http://xml.weather.yahoo.com/ns/rss/1.0");
 
-            // Get forecast with XPath  
+
+            // Get forecast with XPath   
             XmlNodeList nodes = condition.SelectNodes("/rss/channel/item/yweather:condition", NameSpaceMgrCondition);
+            XmlNodeList nodess = condition.SelectNodes("/rss/channel/yweather:location", NameSpaceMgrCity);
+
+            
+
+            foreach (XmlNode node in nodess)
+            {
+                city =  ("City: " +
+                     node.Attributes["city"].InnerText);
+            }
+           
 
             // To get forcasted high
             string temps = forcastTemps();
@@ -60,15 +75,15 @@ namespace WeatherRSS
             foreach (XmlNode node in nodes)
             {
                 
-                weather = ("Currently: " +
+                weather = ( city + "\n" + "Currently: " +
                                     node.Attributes["text"].InnerText + "\n" +
                                     "Now: " +
                                     node.Attributes["temp"].InnerText + "\n" +
                                     "High: " +
-                                    temps + "\n" + 
-                                    "Last Updated: " +
-                                    node.Attributes["date"].InnerText);
-
+                                    temps + "\n" +
+                                    "Last Updated: " +      
+                                   node.Attributes["date"].InnerText);
+                
             }
 
            
