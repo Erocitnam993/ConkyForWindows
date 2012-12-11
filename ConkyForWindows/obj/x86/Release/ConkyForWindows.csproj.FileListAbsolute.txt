@@ -5,17 +5,10 @@ C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release
 C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\App.g.cs
 C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
 C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\ConkyForWindows.csprojResolveAssemblyReference.cache
-C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1.exe
-C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1.pdb
-C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\WpfApplication1.exe
-C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\WpfApplication1.pdb
 C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\ConkyForWindows.csprojResolveAssemblyReference.cache
 C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\MainWindow.baml
 C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\MainWindow.g.cs
 C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\App.g.cs
-C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1_MarkupCompile.cache
-C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1.g.resources
-C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\WpfApplication1.Properties.Resources.resources
 C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.GenerateResource.Cache
 C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.exe
 C:\Users\Greg\Documents\GitHub\Tanner-ConkyWindows\ConkyForWindows\obj\x86\Release\WpfApplication1.pdb
@@ -118,3 +111,20 @@ C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release
 C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\bin\Release\Winky.exe.config
 C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\Options.baml
 C:\Users\Tanner\Documents\GitHub\ConkyForWindows\ConkyForWindows\obj\x86\Release\Options.g.cs
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\Winky.exe.config
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Interop.WUApiLib.dll
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\ConkyForWindows.csproj.ResolveComReference.cache
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Winky.exe
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Winky.pdb
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\Winky.exe.manifest
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\Winky.application
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\Winky.exe
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\Winky.pdb
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\bin\Release\Interop.WUApiLib.dll
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Options.baml
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Options.g.cs
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Winky_MarkupCompile.cache
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Winky.g.resources
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Winky.Properties.Resources.resources
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Winky.exe.manifest
+C:\Users\Tanner\Documents\Visual Studio 2012\Projects\conkyBackup\ConkyForWindows\obj\x86\Release\Winky.application

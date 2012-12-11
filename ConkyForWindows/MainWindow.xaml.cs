@@ -87,6 +87,7 @@ namespace WpfApplication1
         public string time;
         public string cpuCount;
         public int nic = 0;
+        public int driveSelection = 0;
         public NetworkInterface[] interfaces = NetworkInterface.GetAllNetworkInterfaces();
         public PerformanceCounter cpuCounter = new PerformanceCounter();
          
@@ -127,7 +128,7 @@ namespace WpfApplication1
                     DriveInfo[] drives
                         = DriveInfo.GetDrives();
 
-                    DriveInfo drive = drives[0];
+                    DriveInfo drive = drives[driveSelection];
                     driveSpace = drive.AvailableFreeSpace / 1073741824.004733;
                  
                     //Grabs all the needed info for network usage
@@ -237,7 +238,7 @@ namespace WpfApplication1
             txtLocal.Text = ipLocal;
             txtExternal.Text = ipExternal;
             nic = Settings.Default.nic;
-
+            driveSelection = Settings.Default.driveSelection;
             //Converts Variables to a String so you can then format properly
             Convert.ToString(ramTotal);
             Convert.ToString(ramUsed);

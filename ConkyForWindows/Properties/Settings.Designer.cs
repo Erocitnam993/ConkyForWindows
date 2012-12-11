@@ -70,5 +70,17 @@ namespace Winky.Properties {
                 this["txtWOEID"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int driveSelection {
+            get {
+                return ((int)(this["driveSelection"]));
+            }
+            set {
+                this["driveSelection"] = value;
+            }
+        }
     }
 }

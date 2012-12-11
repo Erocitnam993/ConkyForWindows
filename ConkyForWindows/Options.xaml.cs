@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -39,6 +40,7 @@ namespace Winky
             }
             Settings.Default.txtWOEID = txtWeatherLocation.Text;
             Settings.Default.nic = comboNic.SelectedIndex;
+            Settings.Default.driveSelection = comboDisk.SelectedIndex;
             Settings.Default.Save();
         }
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
@@ -51,6 +53,9 @@ namespace Winky
         {
             //Sets the WOEID texbox to last saved entry
             txtWeatherLocation.Text = Settings.Default.txtWOEID;
+            comboNic.SelectedIndex = Settings.Default.nic;
+            comboDisk.SelectedIndex = Settings.Default.driveSelection;
+
             //Scans for all NIC'sand adds them to the ComboBox
             NetworkInterface[] interfaces
                = NetworkInterface.GetAllNetworkInterfaces();
@@ -58,6 +63,28 @@ namespace Winky
             {
                 comboNic.Items.Add(ni.NetworkInterfaceType);
             }
+
+            //Scans for all Drives and adds them to the ComboBox
+            DriveInfo[] drives
+                        = DriveInfo.GetDrives();
+            foreach (DriveInfo drive in DriveInfo.GetDrives())
+            {
+                comboDisk.Items.Add(drive.Name);
+            }
+
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtWeatherLocation.Text != "")
+            {
+                Settings.Default.textboxLocation = "http://weather.yahooapis.com/forecastrss?w=" + txtWeatherLocation.Text;
+            }
+            Settings.Default.txtWOEID = txtWeatherLocation.Text;
+            Settings.Default.nic = comboNic.SelectedIndex;
+            Settings.Default.driveSelection = comboDisk.SelectedIndex;
+            Settings.Default.Save();
+            this.Close();
         }
     }
 }
