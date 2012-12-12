@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Winky.Properties;
 
+
 namespace Winky
 {
     /// <summary>
@@ -26,10 +27,8 @@ namespace Winky
         public Window1()
         {
             InitializeComponent();
-           // locations.location = "http://weather.yahooapis.com/forecastrss?w=2464601";
         }
        
-        //public string location = "http://weather.yahooapis.com/forecastrss?w=2464601";
         private WpfApplication1.MainWindow fif = new WpfApplication1.MainWindow();
 
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
@@ -40,10 +39,11 @@ namespace Winky
 
         private void options_Loaded(object sender, RoutedEventArgs e)
         {
-            //Sets the WOEID texbox to last saved entry
+            //Sets the content to last saved entry
             txtWeatherLocation.Text = Settings.Default.txtWOEID;
             comboNic.SelectedIndex = Settings.Default.nic;
             comboDisk.SelectedIndex = Settings.Default.driveSelection;
+            
 
             //Scans for all NIC'sand adds them to the ComboBox
             NetworkInterface[] interfaces
@@ -63,12 +63,14 @@ namespace Winky
 
         }
 
+        //Saves changes and then close the form
         private void btnSave_Click(object sender, RoutedEventArgs e)
-        {
+        {   
             if (txtWeatherLocation.Text != "")
             {
                 Settings.Default.textboxLocation = "http://weather.yahooapis.com/forecastrss?w=" + txtWeatherLocation.Text;
             }
+         
             Settings.Default.txtWOEID = txtWeatherLocation.Text;
             Settings.Default.nic = comboNic.SelectedIndex;
             Settings.Default.driveSelection = comboDisk.SelectedIndex;
